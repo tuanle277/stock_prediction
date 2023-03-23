@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stock Prediction Results</title>
+	<style>
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin-top: 30px;
+		}
+		.plot-img {
+			max-width: 80%;
+			height: auto;
+			margin-top: 30px;
+		}
+		.info {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin-top: 30px;
+			font-size: 18px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Stock Prediction Results</h2>
+		<div class="info">
+			<p>Predicted stock prices for {{ ticker }} from {{ startday }} to {{ endday }}:</p>
+			<p>{{ predictions }}</p>
+		</div>
+		<img id="plot" src="data:image/png;base64,{{ image_data }}" alt="Plot">
+	</div>
+</body>
+</html>
