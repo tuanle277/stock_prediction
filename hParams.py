@@ -2,7 +2,7 @@ def getHParams(name=None):
 	# Set up what's the same for each experiment
 	hParams = {
 		'experimentName': name,
-		'epochs': 50,
+		'epochs': 5,
 	    'test_prop': 0.1,
 	    'valid_prop':0.2,
 	    'look_back': 20

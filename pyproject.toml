@@ -1,0 +1,15 @@
+[project]
+name = "stock_pred"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "Flask","openai", "transformers", "pandas_datareader", "yfinance", 
+    "torch", "vertexai", "google-cloud-aiplatform", "selenium",
+    "webdriver_manager", "google", "python-dotenv", "tensorflow"
+]
+
+[tool.setuptools.packages.find]
+exclude = ["assets*", "benchmark*", "playground*", "scripts*", "tests*", "data*"]
+
+[tool.wheel]
+exclude = ["assets*", "benchmark*", "playground*", "scripts*", "tests*", "data*"]

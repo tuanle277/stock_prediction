@@ -70,13 +70,13 @@ def plotPredictions(df, predictions, hParams):
     plt.plot(train['Close'])
     plt.plot(valid[['Close', 'Predictions']])
     plt.legend(['Train', 'Val', 'Predictions'], loc='lower right')
-    plt.savefig("graphs/predictions/" + hParams["experimentName"] + "_predictions")
+    plt.savefig("graphs/predictions/" + hParams["model_type"] + "_predictions")
     # plt.show()
 
 # ====================== added Utils functions ====================== #
 def writeExperimentalResults(hParams, trainResults, testResults):
     # == open file == #
-    f = open("results/" + hParams["experimentName"] + ".txt", 'w')
+    f = open("results/" + hParams["model_type"] + ".txt", 'w')
 
     # == write in file == #
     f.write(str(hParams) + '\n\n')
