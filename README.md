@@ -22,7 +22,7 @@
 
 1. **Clone the Repository:**
    ```bash
-   git clone 
+   git clone git@github.com:tuanle277/stock_prediction.git
    cd stock-prediction
    ```
 
@@ -30,6 +30,11 @@
   ```bash
   pip install -e .
   ```
+ 
+3. **Run application**
+   ```bash
+   python app.py
+   ```
 
 Example prediction visualization:
 ![LSTM_64_Dense_128_128_64_1_predictions](https://github.com/tuanle277/stock_prediction/assets/91571142/9eef5e8a-663b-4a5d-9ea6-0377bd4e1b2d)
